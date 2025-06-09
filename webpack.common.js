@@ -5,6 +5,9 @@ module.exports = {
   entry: {
     app: "./src/index.ts",
   },
+  resolve: {
+    extensions: [".ts", ".js"],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Production",
