@@ -6,7 +6,7 @@ module.exports = {
     app: "./src/index.ts",
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".jsx", ".tsx", ".ts", ".js"],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -37,7 +37,7 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(mp3|wav|png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
     ],
